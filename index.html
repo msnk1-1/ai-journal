@@ -16,22 +16,23 @@
     .muted { color: #6b7280; }
     a.button {
       display: inline-block;
-      padding: .6rem 1rem;
-      border-radius: 10px;
-      border: 1px solid #111827;
+      padding: .8rem 1.6rem;
+      border-radius: 12px;
+      border: 2px solid #111827;
       text-decoration: none;
       background: #fff;
-      font-weight: 500;
-      transition: background 0.2s;
-      margin: .4rem 0;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 1rem;
     }
-    a.button:hover { background: #f3f4f6; }
+    a.button:hover { background: #f3f4f6; transform: translateY(-1px); }
     .card {
-      padding: 1.25rem 1.5rem;
+      padding: 2rem 2.5rem;
       border: 1px solid #e5e7eb;
-      border-radius: 14px;
+      border-radius: 16px;
       box-shadow: 0 6px 18px rgba(0,0,0,.06);
       background: #fff;
+      text-align: center;
     }
     code { background: #f3f4f6; padding: .1rem .35rem; border-radius: 6px; }
   </style>
@@ -41,12 +42,18 @@
     <div class="card">
       <h1>AI Usage Journal — Messiah Khalfani</h1>
       <p class="muted">Course: INST326 · Section 0201 · Email: msnk@umd.edu</p>
-      <p>View or download your AI journal entries for Weeks 1 – 5 below.</p>
+      <p>This single journal contains all entries for <strong>Weeks 1–5</strong>. If your browser can’t preview <code>.ipynb</code>, download it and open in Jupyter, Colab, or VS Code.</p>
 
-      <p><a class="button" href="AI_Journal_DempwolfStyle.ipynb">Open Week 1 – AI Usage Journal (.ipynb)</a></p>
-      <p><a class="button" href="AI_Journal_DempwolfStyle_Week2.ipynb">Open Week 2 – AI Usage Journal (.ipynb)</a></p>
-      <p><a class="button" href="AI_Journal_DempwolfStyle_Week2_with_Week4.ipynb">Open Weeks 3 – 4 – AI Usage Journal (.ipynb)</a></p>
-      <p><a class="button" href="week5.html">Open Week 5 – AI Usage Journal (.html)</a></p>
+      <!-- 👇 Change the href below depending on where you keep everything -->
+      <p>
+        <a class="button" href="AI_Journal_DempwolfStyle_Week2_with_Week4.ipynb">
+          Open Weeks 1–5 AI Usage Journal
+        </a>
+      </p>
+      <!-- If you prefer to use your Week 5 HTML page instead, replace the href with week5.html -->
+      <!-- Example:
+      <a class="button" href="week5.html">Open Weeks 1–5 AI Usage Journal</a>
+      -->
     </div>
   </div>
 </body>
